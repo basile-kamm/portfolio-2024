@@ -1,0 +1,37 @@
+.slider-container {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 32px;
+  transform: translateY(99%);
+  overflow: hidden;
+}
+
+.slider-background {
+  height: 100%;
+  width: 400vw;
+  background-repeat: repeat-x;
+  background-size: contain;
+  animation: slider 15s linear infinite;
+}
+
+@media (min-width: 768px) {
+  .slider-container {
+    height: 50px;
+  }
+}
+
+.slider-background.t-head {
+  background-image: url(../asset/img/pattern-top.png);
+}
+
+@keyframes slider {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

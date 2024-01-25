@@ -1,0 +1,19 @@
+.button {
+  color: var(--white);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  background: var(--dark-grey);
+  padding: 8px 12px;
+}
+
+@media (min-width: 768px) {
+  .button {
+    font-size: 20px;
+    padding: 12px 20px;
+  }
+}
+
+.button::selection {
+  background: var(--select-light);
+}

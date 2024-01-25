@@ -1,0 +1,73 @@
+.head-canva {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.head-title,
+.head-subtitle {
+  color: var(--white);
+  font-family: "Anybody", sans-serif;
+  text-transform: uppercase;
+  animation: highlightAnim 1s ease-in-out alternate infinite;
+}
+
+@keyframes highlightAnim {
+  from {
+    text-shadow: 0px 0px 24px rgba(255, 255, 255, 0.72),
+      0px 0px 194px rgba(255, 255, 255, 0.27);
+  }
+  to {
+    text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.72),
+      0px 0px 194px rgba(255, 255, 255, 0.27);
+  }
+}
+
+.head-title {
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 73px;
+}
+
+.head-subtitle {
+  font-size: 28px;
+  font-weight: 200;
+  letter-spacing: 5.6px;
+}
+
+.head-text-container {
+  padding-top: 70px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.head-title::selection,
+.head-subtitle::selection {
+  background: var(--select-light);
+}
+
+@media (min-width: 768px) {
+  .head-text-container {
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+  }
+
+  .head-title {
+    font-size: 190px;
+    line-height: 150px;
+  }
+}
+
+@media (min-width: 992px) {
+  .head-title {
+    font-size: 270px;
+    line-height: 231px;
+  }
+}

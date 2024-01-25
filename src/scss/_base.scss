@@ -1,0 +1,83 @@
+/* ====================================
+// css variables
+// ==================================== */
+
+:root {
+  --dark-grey: #1c1c1c;
+  --white: #fdfdfd;
+  --full-black: #020202;
+  --select-dark: #02020272;
+  --select-light: #ffffffa5;
+}
+
+/* ====================================
+// reset rules
+// ==================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+  font-size: 1rem;
+  line-height: 1.25;
+  background: var(--white);
+  position: relative;
+}
+
+a {
+  color: inherit;
+}
+
+img,
+video {
+  max-inline-size: 100%;
+  block-size: auto;
+  vertical-align: middle;
+}
+
+/* ====================================
+// base rules
+// ==================================== */
+.page {
+  overflow: hidden;
+  position: relative;
+}
+
+* {
+  font-family: "Trispace", serif;
+  font-weight: 400;
+}
+
+*::selection {
+  background: var(--select-dark);
+  mix-blend-mode: difference;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: "Anybody", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 18px;
+  }
+}
