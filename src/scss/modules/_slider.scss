@@ -4,22 +4,22 @@
   bottom: 0;
   right: 0;
   left: 0;
-  height: 32px;
+  height: 50px;
   transform: translateY(99%);
   overflow: hidden;
 }
 
 .slider-background {
   height: 100%;
-  width: 400vw;
+  width: 100vw;
   background-repeat: repeat-x;
-  background-size: contain;
-  animation: slider 15s linear infinite;
+  background-size: 10vw;
+  animation: slider 1s linear infinite;
 }
 
 @media (min-width: 768px) {
-  .slider-container {
-    height: 50px;
+  .slider-background {
+    background-size: 5vw;
   }
 }
 
@@ -29,9 +29,9 @@
 
 @keyframes slider {
   from {
-    transform: translateX(0);
+    background-position: 0 top;
   }
   to {
-    transform: translateX(-50%);
+    background-position: -10vw top;
   }
 }
