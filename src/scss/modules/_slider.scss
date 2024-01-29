@@ -1,12 +1,20 @@
 .slider-container {
   width: 100vw;
   position: absolute;
-  bottom: 0;
   right: 0;
   left: 0;
   height: 50px;
-  transform: translateY(99%);
   overflow: hidden;
+}
+
+.slider-container.t-bottom {
+  transform: translateY(99%);
+  bottom: 0;
+}
+
+.slider-container.t-top {
+  transform: translateY(-99%);
+  top: 0;
 }
 
 .slider-background {
@@ -25,6 +33,15 @@
 
 .slider-background.t-head {
   background-image: url(../asset/img/pattern-top.png);
+}
+
+.slider-background.t-other-top {
+  background-image: url(../asset/img/pattern-other-top.png);
+  background-position: bottom;
+}
+
+.slider-background.t-other-bottom {
+  background-image: url(../asset/img/pattern-other-bottom.png);
 }
 
 @keyframes slider {

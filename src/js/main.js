@@ -11,7 +11,7 @@ const birdUrl = new URL("../asset/3d-model/bird.glb", import.meta.url);
 const renderer = new THREE.WebGLRenderer({ alpha: true });
 
 renderer.physicallyCorrectLights = true;
-renderer.shadowMap.enabled = false;
+renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -55,6 +55,7 @@ assetLoader.load(
     tree = gltf.scene;
     scene.add(tree);
     tree.position.set(0, 0, 0);
+    tree.rotation.set(0, 5, 0);
   },
   undefined,
   function (error) {
