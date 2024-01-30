@@ -126,28 +126,55 @@ animate();
 //   });
 // });
 
+// Setup for squares
+var squares = document.getElementsByClassName("square-container");
+var squaresArr = Array.from(squares);
+
+var squareTriggers = [];
+
+squaresArr.forEach(function (square) {
+  var link = square.querySelector(".square-link");
+
+  var trigger = ScrollTrigger.create({
+    trigger: square,
+    markers: true,
+    start: "top center",
+    end: "bottom center ",
+    onEnter: () => link.classList.add("is-active"),
+    onLeave: () => link.classList.remove("is-active"),
+    onEnterBack: () => link.classList.add("is-active"),
+    onLeaveBack: () => link.classList.remove("is-active"),
+  });
+
+  squareTriggers.push(trigger);
+});
+
+// Function to update square ScrollTriggers based on window size
 function updateScrollTrigger() {
   if (window.innerWidth <= 767) {
-    var squares = document.getElementsByClassName("square-container");
-    var squaresArr = Array.from(squares);
-
-    squaresArr.forEach(function (square) {
-      var link = square.querySelector(".square-link");
-
-      ScrollTrigger.create({
-        trigger: square,
-        markers: true,
-        start: "top center",
-        end: "bottom center ",
-        onEnter: () => link.classList.add("is-active"),
-        onLeave: () => link.classList.remove("is-active"),
-        onEnterBack: () => link.classList.add("is-active"),
-        onLeaveBack: () => link.classList.remove("is-active"),
-      });
-    });
+    squareTriggers.forEach((trigger) => trigger.enable());
   } else {
-    ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    squareTriggers.forEach((trigger) => trigger.disable());
   }
 }
 
+// Initial setup
 updateScrollTrigger();
+
+// Update on window resize
+window.addEventListener("resize", updateScrollTrigger);
+
+// Setup for cards
+var cards = document.getElementsByClassName("card-container");
+var cardsArr = Array.from(cards);
+
+cardsArr.forEach(function (card) {
+  var trigger = ScrollTrigger.create({
+    markers: true,
+    trigger: card,
+    start: "top bottom",
+    end: "bottom center ",
+    onEnter: () => card.classList.remove("is-out"),
+    onLeaveBack: () => card.classList.add("is-out"),
+  });
+});
