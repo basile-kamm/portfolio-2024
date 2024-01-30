@@ -22,7 +22,7 @@
   position: absolute;
   z-index: 1;
   pointer-events: none;
-  transition: 0.3s transform ease-out 0.2s;
+  transition: 0.3s transform ease-out;
 }
 
 .card-text-container {
@@ -86,7 +86,7 @@
 
   .card-screen {
     transform: scale(1, 1);
-    transition: 0.4s transform ease-in-out;
+    transition: 0.2s transform ease-in-out;
   }
 
   .card-link:hover .card-screen {
@@ -120,13 +120,13 @@
     font-size: 28px;
     text-align: left;
     transform: translateY(70%);
-    transition: 0.3s transform ease-in-out 0.1s;
+    transition: 0.3s transform ease-in-out;
   }
 
   .card-cta {
     justify-content: left;
     transform: translateY(100%);
-    transition: 0.3s transform ease-in-out 0.1s;
+    transition: 0.3s transform ease-in-out;
   }
 
   .card-big-part {

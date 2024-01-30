@@ -15,5 +15,6 @@
 }
 
 .button::selection {
-  background: var(--select-light);
+  background: var(--white);
+  color: var(--dark-grey);
 }

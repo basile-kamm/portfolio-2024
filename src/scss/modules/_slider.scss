@@ -22,7 +22,14 @@
   width: 100vw;
   background-repeat: repeat-x;
   background-size: 10vw;
-  animation: slider 1s linear infinite;
+}
+
+.slider-container.t-top .slider-background {
+  animation: sliderTop 1s linear infinite;
+}
+
+.slider-container.t-bottom .slider-background {
+  animation: sliderBottom 1s linear infinite;
 }
 
 @media (min-width: 768px) {
@@ -35,20 +42,28 @@
   background-image: url(../asset/img/pattern-top.png);
 }
 
-.slider-background.t-other-top {
+.slider-background.t-square-top {
   background-image: url(../asset/img/pattern-other-top.png);
-  background-position: bottom;
 }
 
-.slider-background.t-other-bottom {
+.slider-background.t-square-bottom {
   background-image: url(../asset/img/pattern-other-bottom.png);
 }
 
-@keyframes slider {
+@keyframes sliderBottom {
   from {
     background-position: 0 top;
   }
   to {
     background-position: -10vw top;
+  }
+}
+
+@keyframes sliderTop {
+  from {
+    background-position: 0 bottom;
+  }
+  to {
+    background-position: -10vw bottom;
   }
 }
