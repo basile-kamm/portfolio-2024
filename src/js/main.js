@@ -37,6 +37,8 @@ window.addEventListener("resize", function () {
 
   renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+  updateScrollTrigger();
 });
 
 const setupAnimation = () => {};
@@ -96,3 +98,56 @@ function animate() {
 }
 
 animate();
+
+// SCROLL TRIGGER
+// var squares = document.getElementsByClassName("square-container");
+// var link = document.getElementsByClassName("square-link");
+// var squaresArr = Array.from(squares);
+
+// // squaresArr.forEach(function (link) {
+// //   gsap.to(".square-link", {
+// //     scrollTrigger: {
+// //       trigger: ".square-container",
+// //       markers: true,
+// //       start: "bottom center",
+// //       end: "bottom 20%",
+// //     },
+// //   });
+// // });
+
+// gsap.utils.toArray(".square-link").forEach((link) => {
+//   ScrollTrigger.create({
+//     trigger: ".square-link",
+//     markers: true,
+//     start: "bottom center",
+//     end: "bottom 20%",
+//     onEnter: () => link.classList.add("is-active"),
+//     onLeaveBack: () => link.classList.remove("is-active"),
+//   });
+// });
+
+function updateScrollTrigger() {
+  if (window.innerWidth <= 767) {
+    var squares = document.getElementsByClassName("square-container");
+    var squaresArr = Array.from(squares);
+
+    squaresArr.forEach(function (square) {
+      var link = square.querySelector(".square-link");
+
+      ScrollTrigger.create({
+        trigger: square,
+        markers: true,
+        start: "top center",
+        end: "bottom center ",
+        onEnter: () => link.classList.add("is-active"),
+        onLeave: () => link.classList.remove("is-active"),
+        onEnterBack: () => link.classList.add("is-active"),
+        onLeaveBack: () => link.classList.remove("is-active"),
+      });
+    });
+  } else {
+    ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+  }
+}
+
+updateScrollTrigger();
