@@ -1,0 +1,89 @@
+.bottom-nav-container {
+  position: relative;
+  height: 150px;
+  border: 1px solid var(--dark-grey);
+  background-size: cover;
+}
+
+.bottom-nav-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff00;
+  transition: background 0.3s;
+}
+
+.bottom-nav-text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.bottom-nav-subtitle,
+.bottom-nav-title {
+  color: var(--dark-grey);
+  font-family: "Anybody", sans-serif;
+  font-weight: 900;
+  text-shadow: 2px 0 0 var(--white), /*right */ 0 2px 0 var(--white),
+    /*top */ -2px 0 0 var(--white), /*left */ 0 -2px 0 var(--white); /*bottom */
+  transition: 0.3s;
+}
+
+.bottom-nav-subtitle {
+  font-size: 11px;
+}
+
+.bottom-nav-title {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.bottom-nav-link:hover .bottom-nav-subtitle,
+.bottom-nav-link:hover .bottom-nav-title {
+  text-shadow: 3px 0 0 var(--dark-grey), /*right */ 0 3px 0 var(--dark-grey),
+    /*top */ -3px 0 0 var(--dark-grey), /*left */ 0 -3px 0 var(--dark-grey); /*bottom */
+  color: var(--white);
+}
+
+.bottom-nav-link:hover {
+  background: #ffffff3c;
+}
+
+@media (min-width: 768px) {
+  .bottom-nav-title {
+    font-size: 48px;
+  }
+
+  .bottom-nav-subtitle {
+    font-size: 15px;
+  }
+
+  .bottom-nav-container {
+    height: 200px;
+  }
+}
+
+.bottom-nav-container.t-phone {
+  background-image: url(../asset/img/gif/phone.gif);
+  background-position: bottom;
+}
+
+.bottom-nav-container.t-mail {
+  background-image: url(../asset/img/gif/mail.gif);
+  background-position: center;
+}
+
+.bottom-nav-container.t-git {
+  background-image: url(../asset/img/gif/giphy.gif);
+  background-position: center;
+}
+
+.bottom-nav-container.t-insta {
+  background-image: url(../asset/img/gif/insta.gif);
+  background-position: center;
+}

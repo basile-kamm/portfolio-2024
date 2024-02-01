@@ -223,12 +223,17 @@
 .card-absolute-element.yellow-frog {
   top: -68px;
   height: 80px;
+  transition: 0.3s transform, top 0.5s;
 }
 
 .card-absolute-element.purple-frog {
   bottom: 0;
   right: 20px;
   height: 90px;
+}
+
+.card-container.is-out .card-absolute-element.yellow-frog {
+  top: -20px;
 }
 
 @media (min-width: 768px) {

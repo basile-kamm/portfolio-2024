@@ -1,0 +1,37 @@
+.about-container {
+  padding-top: 70px;
+}
+
+.about-title {
+  margin-bottom: 20px;
+}
+
+.about-text {
+  margin-bottom: 30px;
+  font-size: 18px;
+  letter-spacing: -1.2px;
+  font-weight: 300;
+}
+
+.about-container .button {
+  margin-bottom: 100px;
+}
+
+.about-container .container-fluid {
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .about-text {
+    font-size: 30px;
+    margin-bottom: 60px;
+  }
+
+  .about-container {
+    padding-top: 120px;
+  }
+
+  .about-container .container-fluid {
+    margin-top: 80px;
+  }
+}

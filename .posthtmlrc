@@ -2,6 +2,10 @@
   "plugins": {
     "posthtml-include": {
       "root": "src"
+    },
+    "posthtml-extend": {
+      "root": "src",
+      "strict": false
     }
   }
 }

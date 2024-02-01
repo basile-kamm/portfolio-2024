@@ -137,7 +137,7 @@ squaresArr.forEach(function (square) {
 
   var trigger = ScrollTrigger.create({
     trigger: square,
-    markers: true,
+    // markers: true,
     start: "top center",
     end: "bottom center ",
     onEnter: () => link.classList.add("is-active"),
@@ -170,7 +170,7 @@ var cardsArr = Array.from(cards);
 
 cardsArr.forEach(function (card) {
   var trigger = ScrollTrigger.create({
-    markers: true,
+    // markers: true,
     trigger: card,
     start: "top bottom",
     end: "bottom center ",
