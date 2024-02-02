@@ -178,3 +178,15 @@ cardsArr.forEach(function (card) {
     onLeaveBack: () => card.classList.add("is-out"),
   });
 });
+
+// burger menu
+const hamburger = document.querySelector(".burger-icon");
+const background = document.querySelector(".burger-background");
+const burger = document.querySelector(".burger-container");
+
+hamburger.addEventListener("click", isActive);
+background.addEventListener("click", isActive);
+
+function isActive() {
+  burger.classList.toggle("is-active");
+}
