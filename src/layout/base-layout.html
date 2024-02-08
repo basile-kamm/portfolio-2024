@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/main.scss" />
+  </head>
+  <body>
+    <div class="burger-container">
+      <div class="burger-bar">
+        <div class="burger-icon">
+          <span class="burger-icon-bar"></span>
+          <span class="burger-icon-bar"></span>
+          <span class="burger-icon-bar"></span>
+        </div>
+      </div>
+      <div class="burger-display">
+        <nav class="burger-nav">
+          <a href="index.html/#dev" class="burger-link">Development</a>
+          <div class="burger-link-other-container">
+            <a href="index.html/#others" class="burger-link">Others</a>
+            <a href="3d.html" class="burger-link-small">3D</a>
+            <a href="graphism.html" class="burger-link-small">Graphism</a>
+            <a href="video.html" class="burger-link-small">Video</a>
+            <a href="photo.html" class="burger-link-small">Photo</a>
+          </div>
+          <a href="index.html/#about" class="burger-link">About me</a>
+        </nav>
+        <div class="burger-info">
+          <p class="burger-title">portfolio</p>
+          <p class="burger-author">Basile Kamm - 2024</p>
+        </div>
+      </div>
+      <div class="burger-background"></div>
+    </div>
+    <block name="content"></block>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6 col-md-3 g-0">
+          <div class="bottom-nav-container t-phone">
+            <a href="tel:+41775388807" class="bottom-nav-link">
+              <div class="bottom-nav-text">
+                <p class="bottom-nav-title">Phone</p>
+                <p class="bottom-nav-subtitle">077 538 88 07</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 g-0">
+          <div class="bottom-nav-container t-mail">
+            <a href="mailto:basile-kamm@proton.me" class="bottom-nav-link">
+              <div class="bottom-nav-text">
+                <p class="bottom-nav-title">Mail</p>
+                <p class="bottom-nav-subtitle">basile-kamm@proton.me</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 g-0">
+          <div class="bottom-nav-container t-git">
+            <a
+              href="https://github.com/basile-kamm"
+              target="_blank"
+              class="bottom-nav-link"
+            >
+              <div class="bottom-nav-text">
+                <p class="bottom-nav-title">Github</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 g-0">
+          <div class="bottom-nav-container t-insta">
+            <a
+              href="https://www.instagram.com/another.black.kitty/"
+              target="_blank"
+              class="bottom-nav-link"
+            >
+              <div class="bottom-nav-text">
+                <p class="bottom-nav-title">Insta</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="noise"></div>
+
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>

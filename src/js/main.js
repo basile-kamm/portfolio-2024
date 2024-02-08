@@ -16,7 +16,10 @@ renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
 renderer.setSize(window.innerWidth, window.innerHeight);
 
-document.querySelector(".head-canva").appendChild(renderer.domElement);
+var headCanva = document.querySelector(".head-canva");
+if (headCanva) {
+  headCanva.appendChild(renderer.domElement);
+}
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
@@ -138,8 +141,8 @@ squaresArr.forEach(function (square) {
   var trigger = ScrollTrigger.create({
     trigger: square,
     // markers: true,
-    start: "top center",
-    end: "bottom center ",
+    start: "top 70%",
+    end: "bottom 70% ",
     onEnter: () => link.classList.add("is-active"),
     onLeave: () => link.classList.remove("is-active"),
     onEnterBack: () => link.classList.add("is-active"),

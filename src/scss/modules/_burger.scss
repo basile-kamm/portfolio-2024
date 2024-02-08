@@ -11,8 +11,7 @@
 .burger-bar {
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
+  width: 100vw;
   height: 45px;
   background: var(--full-black);
   z-index: 5;
@@ -22,7 +21,7 @@
 .burger-icon {
   position: absolute;
   top: 10px;
-  right: 20px;
+  right: 10px;
   width: 30px;
   height: 24px;
   display: flex;
@@ -62,7 +61,6 @@
 .burger-link-other-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   gap: 10px;
 }
 
@@ -88,13 +86,14 @@
   bottom: 0;
   z-index: 3;
   backdrop-filter: blur(0);
-  transition: backdrop-filter 0.3 ease-in-out;
+  transition: backdrop-filter 0.3s ease-in-out;
   pointer-events: none;
 }
 
 .burger-container.is-active .burger-background {
   pointer-events: all;
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(2px);
+  transition: backdrop-filter 0.3s ease-out 0.1s;
 }
 
 @media (min-width: 768px) {
@@ -107,6 +106,10 @@
 
   .burger-nav {
     gap: 50px;
+  }
+
+  .burger-icon {
+    right: 30px;
   }
 
   .burger-link-small {

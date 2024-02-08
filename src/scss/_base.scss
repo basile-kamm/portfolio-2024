@@ -23,6 +23,7 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -83,4 +84,12 @@ h2 {
     font-size: 18px;
     margin-bottom: 15px;
   }
+
+  footer {
+    padding-bottom: 40px;
+  }
+}
+
+footer {
+  margin-bottom: 40px;
 }
