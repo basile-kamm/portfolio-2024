@@ -3,6 +3,7 @@
   height: 150px;
   border: 1px solid var(--dark-grey);
   background-size: cover;
+  background-color: var(--dark-grey);
 }
 
 .bottom-nav-link {
@@ -69,21 +70,21 @@
 }
 
 .bottom-nav-container.t-phone {
-  background-image: url(../asset/img/gif/phone.gif);
+  background-image: url(../asset/img/gif/phone.webp);
   background-position: bottom;
 }
 
 .bottom-nav-container.t-mail {
-  background-image: url(../asset/img/gif/mail.gif);
+  background-image: url(../asset/img/gif/mail.webp);
   background-position: center;
 }
 
 .bottom-nav-container.t-git {
-  background-image: url(../asset/img/gif/giphy.gif);
+  background-image: url(../asset/img/gif/code.webp);
   background-position: center;
 }
 
 .bottom-nav-container.t-insta {
-  background-image: url(../asset/img/gif/insta.gif);
+  background-image: url(../asset/img/gif/insta.webp);
   background-position: center;
 }

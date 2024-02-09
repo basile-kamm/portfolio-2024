@@ -128,13 +128,13 @@
     font-size: 28px;
     text-align: left;
     transform: translateY(70%);
-    transition: 0.3s transform ease-in-out;
+    transition: 0.3s transform ease-in-out 0.1s;
   }
 
   .card-cta {
     justify-content: left;
     transform: translateY(100%);
-    transition: 0.3s transform ease-in-out;
+    transition: 0.3s transform ease-in-out 0.2s;
   }
 
   .card-big-part {

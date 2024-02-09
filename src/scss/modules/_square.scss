@@ -61,7 +61,7 @@
 
 .square-link:hover .square-img.t-first,
 .square-link.is-active .square-img.t-first {
-  transform: rotate(5deg);
+  transform: rotate(-3deg);
   transition: 0.2s transform steps(1);
 }
 
@@ -69,13 +69,13 @@
 .square-link.is-active .square-img.t-middle {
   opacity: 1;
   transform: rotate(15deg);
-  transition: 0.2s transform steps(1) 0.1s, opacity 0.01s 0.1s;
+  transition: 0.2s transform steps(2) 0.1s, opacity 0.01s 0.1s;
 }
 
 .square-link:hover .square-img.t-last,
 .square-link.is-active .square-img.t-last {
   opacity: 1;
-  transform: rotate(-5deg);
+  transform: rotate(-8deg);
   transition: 0.2s transform steps(1) 0.3s, opacity 0.01s 0.3s;
 }
 

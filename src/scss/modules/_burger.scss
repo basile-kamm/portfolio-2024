@@ -96,6 +96,11 @@
   transition: backdrop-filter 0.3s ease-out 0.1s;
 }
 
+.burger-icon,
+.burger-background {
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .burger-link {
     font-size: 35px;
