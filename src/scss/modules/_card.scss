@@ -105,6 +105,24 @@
     transform: scale(1.1);
   }
 
+  .card-link:hover .card-theme,
+  .card-link:hover .card-year,
+  .card-link:hover .tag-container {
+    transform: translateX(15px);
+  }
+
+  .card-theme {
+    transition: transform 0.3s;
+  }
+
+  .card-year {
+    transition: transform 0.3s 0.2s;
+  }
+
+  .card-container .tag-container {
+    transition: transform 0.3s 0.4s;
+  }
+
   .card-text-container {
     width: 40%;
     padding: 18px 14px;

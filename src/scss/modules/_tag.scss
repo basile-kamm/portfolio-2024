@@ -1,0 +1,27 @@
+.tag-container {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.tag {
+  font-size: 7px;
+  text-transform: uppercase;
+  background: var(--white);
+  color: var(--dark-grey);
+  padding: 3px 7px;
+  font-family: "Anybody", sans-serif;
+  font-size: 700;
+  letter-spacing: 0.5px;
+  border-radius: 20px;
+  border: 1px solid var(--white);
+  transition: background 0.3s 0.2s, color 0.3s 0.2s;
+}
+
+@media (min-width: 768px) {
+  .tag {
+    font-size: 9px;
+  }
+}

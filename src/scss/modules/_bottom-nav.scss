@@ -58,6 +58,7 @@
 @media (min-width: 768px) {
   .bottom-nav-title {
     font-size: 48px;
+    transition: font-size 0.5s cubic-bezier(0.83, -0.325, 0.2, 3);
   }
 
   .bottom-nav-subtitle {
@@ -66,6 +67,10 @@
 
   .bottom-nav-container {
     height: 200px;
+  }
+
+  .bottom-nav-link:hover .bottom-nav-title {
+    font-size: 53px;
   }
 }
 
