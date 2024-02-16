@@ -10,6 +10,11 @@
   filter: blur(0);
 }
 
+.card-title::selection {
+  background: var(--white);
+  color: var(--dark-grey);
+}
+
 .card-container.is-out {
   transform: translateY(20%);
   filter: blur(10px);
@@ -76,6 +81,13 @@
 
 .card-cta-img {
   width: 60px;
+}
+
+.card-big-part {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 @media (min-width: 768px) {
@@ -152,11 +164,7 @@
   .card-cta {
     justify-content: left;
     transform: translateY(100%);
-    transition: 0.3s transform ease-in-out 0.2s;
-  }
-
-  .card-big-part {
-    overflow: hidden;
+    transition: 0.3s transform ease-in-out 0.3s;
   }
 
   .card-cta-text {

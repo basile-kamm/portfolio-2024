@@ -75,7 +75,7 @@
   height: 4px;
   width: 100%;
   background: var(--white);
-  transition: 0.3s;
+  transition: 0.3s ease-out;
 }
 
 .burger-background {
@@ -149,6 +149,7 @@
 
 .burger-container.is-active .burger-icon-bar:nth-child(2) {
   background-color: transparent;
+  transform: translateX(100%);
 }
 
 .burger-container.is-active .burger-icon-bar:nth-child(3) {

@@ -102,33 +102,6 @@ function animate() {
 
 animate();
 
-// SCROLL TRIGGER
-// var squares = document.getElementsByClassName("square-container");
-// var link = document.getElementsByClassName("square-link");
-// var squaresArr = Array.from(squares);
-
-// // squaresArr.forEach(function (link) {
-// //   gsap.to(".square-link", {
-// //     scrollTrigger: {
-// //       trigger: ".square-container",
-// //       markers: true,
-// //       start: "bottom center",
-// //       end: "bottom 20%",
-// //     },
-// //   });
-// // });
-
-// gsap.utils.toArray(".square-link").forEach((link) => {
-//   ScrollTrigger.create({
-//     trigger: ".square-link",
-//     markers: true,
-//     start: "bottom center",
-//     end: "bottom 20%",
-//     onEnter: () => link.classList.add("is-active"),
-//     onLeaveBack: () => link.classList.remove("is-active"),
-//   });
-// });
-
 // Setup for squares
 var squares = document.getElementsByClassName("square-container");
 var squaresArr = Array.from(squares);
