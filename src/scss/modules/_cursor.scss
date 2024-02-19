@@ -1,0 +1,25 @@
+.cursor-container {
+  pointer-events: none;
+  position: fixed;
+  display: block;
+  border-radius: 0;
+  mix-blend-mode: difference;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.cursor-circle {
+  position: absolute;
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+@media (max-width: 767px) {
+  .cursor-container {
+    display: none;
+  }
+}
