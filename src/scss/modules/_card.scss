@@ -262,6 +262,12 @@
   top: -20px;
 }
 
+.card-absolute-element.beer {
+  height: 200px;
+  right: 50px;
+  bottom: -20px;
+}
+
 @media (min-width: 768px) {
   .card-absolute-element.duck {
     top: -20px;
@@ -297,6 +303,11 @@
     bottom: 0;
     right: 20px;
     height: 120px;
+  }
+  .card-absolute-element.beer {
+    height: 300px;
+    right: auto;
+    left: 30px;
   }
 }
 
@@ -335,6 +346,9 @@
     bottom: 0;
     right: 20px;
     height: 200px;
+  }
+  .card-absolute-element.beer {
+    height: 400px;
   }
 }
 
